@@ -13,4 +13,17 @@ body {
 
 .logo {
     max-width: 80%; /* Adjust the size of the logo as needed */
+    animation: lightingEffect 4s linear infinite alternate; /* Animation for the lighting effect */
+}
+
+@keyframes lightingEffect {
+    0% {
+        filter: brightness(1); /* Initial brightness */
+    }
+    50% {
+        filter: brightness(1.5); /* Maximum brightness in the middle of animation */
+    }
+    100% {
+        filter: brightness(1); /* Back to initial brightness */
+    }
 }
