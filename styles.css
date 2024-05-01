@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e; /* Dark background color */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of viewport */
+}
+
+.logo {
+    max-width: 80%; /* Adjust the size of the logo as needed */
+}
