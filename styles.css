@@ -13,17 +13,20 @@ body {
 
 .logo {
     max-width: 80%; /* Adjust the size of the logo as needed */
-    animation: lightingEffect 4s linear infinite alternate; /* Animation for the lighting effect */
+    background-image: linear-gradient(to right, transparent 49.5%, rgba(255, 215, 0, 0.7) 50%, rgba(255, 215, 0, 0.7) 50.5%, transparent 51%);
+    background-size: 200% 100%; /* Double the width of the background to cover both sides */
+    background-position: -100% 0; /* Initial position of the background */
+    animation: lightingEffect 5s ease-in-out infinite; /* Animation for the lighting effect */
 }
 
 @keyframes lightingEffect {
     0% {
-        filter: brightness(1); /* Initial brightness */
+        background-position: 28% 0; /* Starting position of the background */
     }
     50% {
-        filter: brightness(1.5); /* Maximum brightness in the middle of animation */
+        background-position: 75% 0; /* Middle position of the background */
     }
     100% {
-        filter: brightness(1); /* Back to initial brightness */
+        background-position: 28% 0; /* Ending position of the background */
     }
 }
